@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="2.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ToDoDataContext\ToDoDataContext.csproj" />
+  </ItemGroup>
+
+</Project>
+
+<!--https://stormpath.com/blog/tutorial-entity-framework-core-in-memory-database-asp-net-core-->
+<!--https://garywoodfine.com/using-ef-core-in-a-separate-class-library-project/-->
