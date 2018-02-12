@@ -43,6 +43,15 @@ export class ToDoClientApiService {
 
 
 
+  deleteToDoItem(toDoId: number): Observable<Object> {
+    let params = new HttpParams();
+    params = params.append('id', toDoId.toString());
+
+    return this.http.get<toDoDomain>('api/ToDoData/DeteleItem', { params: params })
+      .pipe(catchError(this.handleError));
+  }
+
+
   postToDo(dataToPost: toDoDomain, id: number): Observable<Object> {
     const httpOptions = {
       headers: new HttpHeaders({

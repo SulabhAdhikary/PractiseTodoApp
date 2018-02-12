@@ -53,7 +53,21 @@ namespace practiseToDoApp.Controllers
             }
         }
 
-
+        [HttpGet("[action]")]
+        public async Task<IActionResult> DeteleItem(string id)
+        {
+            try
+            {
+                await ToDoBusinessLayer.Delete(Convert.ToInt32(id));
+                OkResult obj = new OkResult();
+                return obj;
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message.ToString());
+            }
+        }
+        
 
         private async Task<string> GetIDForNewData()
         {

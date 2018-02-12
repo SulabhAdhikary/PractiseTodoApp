@@ -36,11 +36,11 @@
     <tr>
 
       <td></td>
-      <td align="right"><button type="button" class="btn btn-primary" (click)="btnAddClicked()">ADD</button></td>
+      <td align="right"></td>
       <td></td>
       <td></td>
       <td></td>
-      <td></td>
+      <td><button type="button" class="btn btn-primary" (click)="btnAddClicked()"> ADD   </button></td>
     </tr>
   </tfoot>
 </table>
@@ -48,6 +48,7 @@
 <app-dialog [(visible)]="showDialog">
   <h1> Are you Sure you Want to delete {{SelectedIndex}} ?</h1>
   <button (click)="showDialog = !showDialog" class="btn">Close</button>
+
 </app-dialog>
 
 

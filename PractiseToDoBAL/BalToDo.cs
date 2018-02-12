@@ -79,6 +79,11 @@ namespace PractiseToDoBAL
 
         }
 
+          public async  Task Delete(int id)
+          {
+             await _ITableToDo.Delete<ToDoEntity>(id);
+          }
+
 
     }
 }

@@ -1,6 +1,11 @@
 
 
-
+<div class="row">
+  <div class="col-sm-2">
+    &nbsp;
+  </div>
+  
+</div>
 <form>
   <div class="form-group row">
     <label for="todoName" class="col-sm-2 col-form-label">Name</label>
@@ -49,9 +54,31 @@
     <button *ngIf="!domainModel.IsCompleted" type="button" class="btn btn-primary" (click)="btnCompleteClicked()" [disabled]="!domainModel == null">Complete This Task</button>
     <button *ngIf="domainModel.IsCompleted" type="button" class="btn btn-primary" (click)="btnMoveToIndex()" [disabled]="!domainModel == null">Index</button>
     <button *ngIf="!domainModel.IsCompleted" type="button" class="btn btn-info" (click)="btnEditClicked()" [disabled]="!domainModel == null">Edit This Task</button>
-    <button *ngIf="domainModel.IsCompleted" type="button" class="btn btn-warning" (click)="btnDeleteClicked()" [disabled]="!domainModel == null">Delete</button>
+    <button *ngIf="domainModel.IsCompleted" type="button" class="btn btn-danger" (click)="btnDeleteClicked()" [disabled]="!domainModel == null">Delete</button>
   </div>
 </div>
 
 
 
+<app-dialog [(visible)]="showDialog">
+  <div class="row">
+    <div class="col-md-12">
+      <h1> Are you Sure you Want to delete {{SelectedIndex}} ?</h1>
+    </div>
+    </div>
+
+  <div class="row">
+    <div class="col-md-3">
+
+    </div>
+    <div class="col-md-1">
+      <button (click)="btnDeleteConfirmation()" class="btn btn-danger">Yes</button>
+    </div>
+    <div class="col-md-1">
+
+    </div>
+    <div class="col-md-1">
+      <button (click)="showDialog = !showDialog" class="btn btn-info">No</button>
+    </div>
+  </div>
+</app-dialog>

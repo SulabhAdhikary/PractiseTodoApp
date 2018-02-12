@@ -14,6 +14,7 @@ export class TododetailComponent implements OnInit {
   todoId: number = 0;
   domainModel: toDoDomain = new toDoDomain();
   toDoPriorities: any;
+  showDialog = false;
 
   constructor(private activatedRoute: ActivatedRoute,private apiService: ToDoClientApiService, private router: Router) {
     this.toDoPriorities = priorities;
@@ -87,8 +88,21 @@ export class TododetailComponent implements OnInit {
     console.log(activity.Message);
   }
 
+  btnDeleteClicked() {
+    this.showDialog = !this.showDialog
+  }
 
+  btnDeleteConfirmation() {
+    this.showDialog = !this.showDialog
+    this.apiService.deleteToDoItem(this.todoId).subscribe(res => this.windingUpSuccessCallForDelete(res), err => this.windingUpErrorCallDelete(err));
+  }
 
+  windingUpSuccessCallForDelete(msg: any) {
+    this.router.navigate(['fetch-data'])
+  }
 
+  windingUpErrorCallDelete(msg: any) {
+    console.log('error');
+  }
 
 }

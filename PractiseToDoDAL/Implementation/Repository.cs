@@ -22,9 +22,9 @@ namespace PractiseToDoDAL
             try
             {
                 await _context.Set<T>().AddAsync(currentData);
-                await  _context.SaveChangesAsync();
-              
-            }catch(Exception ex)
+                await _context.SaveChangesAsync();
+
+            } catch (Exception ex)
             {
                 throw new Exception(ex.Message);
             }
@@ -33,10 +33,10 @@ namespace PractiseToDoDAL
         public virtual IQueryable<T> GetAll<T>() where T : class
         {
             var query = _context.Set<T>();
-            return  query;
+            return query;
         }
 
-        public virtual  IQueryable<T> GetAllIncluding<T>(params Expression<Func<T, object>>[] includes) where T : class
+        public virtual IQueryable<T> GetAllIncluding<T>(params Expression<Func<T, object>>[] includes) where T : class
         {
             IQueryable<T> retValue = _context.Set<T>();
             foreach (var item in includes)
@@ -48,19 +48,26 @@ namespace PractiseToDoDAL
 
         public virtual async Task Update<T>(T updated, int key) where T : class
         {
-
-
             T existing = _context.Set<T>().Find(key);
             if (existing != null)
             {
                 _context.Entry(existing).CurrentValues.SetValues(updated);
                 await _context.SaveChangesAsync();
-              
+
             }
-    
-         
         }
 
-        
+        public virtual async Task Delete<T>(int key) where T : class
+        {
+            T existing = _context.Set<T>().Find(key);
+            if (existing != null)
+            {
+                _context.Remove(existing);
+                await _context.SaveChangesAsync();
+
+            }
+        }
+
+
     }
 }

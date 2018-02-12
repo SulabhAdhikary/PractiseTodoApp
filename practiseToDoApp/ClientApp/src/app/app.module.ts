@@ -14,6 +14,7 @@ import { FieldErrorDisplayComponent } from './field-error-display/field-error-di
 import { ToDoClientApiService } from './TodoService';
 import { TododetailComponent } from './tododetail/tododetail.component';
 import { DialogComponent } from './dialog/dialog.component';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { DialogComponent } from './dialog/dialog.component';
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
+    NoopAnimationsModule,
     RouterModule.forRoot([
       { path: '', component: FetchDataComponent, pathMatch: 'full' },
       { path: 'fetch-data', component: FetchDataComponent },

@@ -14,6 +14,7 @@ namespace PractiseToDoDAL
         IQueryable<T> GetAllIncluding<T>(params Expression<Func<T, object>>[] includes) where T : class;
         Task  Add<T>(T currentData) where T : class;
         Task Update<T>(T updated, int key) where T : class;
+        Task Delete<T>(int key) where T : class;
     }
 
    

@@ -9,6 +9,7 @@ namespace PractiseToDoBAL
     {
         Task Add(ToDoViewModel model);
         Task Update(ToDoViewModel model);
+        Task Delete(int id);
         Task<List<ToDoViewModel>> GetAll();
     }
 }
