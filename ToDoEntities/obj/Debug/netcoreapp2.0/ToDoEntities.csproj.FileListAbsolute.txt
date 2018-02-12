@@ -1,0 +1,8 @@
+C:\Users\sulab\Documents\GitHub\PractiseTodoApp\ToDoEntities\bin\Debug\netcoreapp2.0\ToDoEntities.deps.json
+C:\Users\sulab\Documents\GitHub\PractiseTodoApp\ToDoEntities\bin\Debug\netcoreapp2.0\ToDoEntities.dll
+C:\Users\sulab\Documents\GitHub\PractiseTodoApp\ToDoEntities\bin\Debug\netcoreapp2.0\ToDoEntities.pdb
+C:\Users\sulab\Documents\GitHub\PractiseTodoApp\ToDoEntities\obj\Debug\netcoreapp2.0\ToDoEntities.csproj.CoreCompileInputs.cache
+C:\Users\sulab\Documents\GitHub\PractiseTodoApp\ToDoEntities\obj\Debug\netcoreapp2.0\ToDoEntities.AssemblyInfoInputs.cache
+C:\Users\sulab\Documents\GitHub\PractiseTodoApp\ToDoEntities\obj\Debug\netcoreapp2.0\ToDoEntities.AssemblyInfo.cs
+C:\Users\sulab\Documents\GitHub\PractiseTodoApp\ToDoEntities\obj\Debug\netcoreapp2.0\ToDoEntities.dll
+C:\Users\sulab\Documents\GitHub\PractiseTodoApp\ToDoEntities\obj\Debug\netcoreapp2.0\ToDoEntities.pdb

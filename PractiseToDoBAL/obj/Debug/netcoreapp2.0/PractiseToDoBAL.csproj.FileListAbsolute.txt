@@ -1,0 +1,15 @@
+C:\Users\sulab\Documents\GitHub\PractiseTodoApp\PractiseToDoBAL\bin\Debug\netcoreapp2.0\PractiseToDoBAL.deps.json
+C:\Users\sulab\Documents\GitHub\PractiseTodoApp\PractiseToDoBAL\bin\Debug\netcoreapp2.0\PractiseToDoBAL.dll
+C:\Users\sulab\Documents\GitHub\PractiseTodoApp\PractiseToDoBAL\bin\Debug\netcoreapp2.0\PractiseToDoBAL.pdb
+C:\Users\sulab\Documents\GitHub\PractiseTodoApp\PractiseToDoBAL\bin\Debug\netcoreapp2.0\PractiseToDoDAL.dll
+C:\Users\sulab\Documents\GitHub\PractiseTodoApp\PractiseToDoBAL\bin\Debug\netcoreapp2.0\ToDoDataContext.dll
+C:\Users\sulab\Documents\GitHub\PractiseTodoApp\PractiseToDoBAL\bin\Debug\netcoreapp2.0\ToDoEntities.dll
+C:\Users\sulab\Documents\GitHub\PractiseTodoApp\PractiseToDoBAL\bin\Debug\netcoreapp2.0\PractiseToDoDAL.pdb
+C:\Users\sulab\Documents\GitHub\PractiseTodoApp\PractiseToDoBAL\bin\Debug\netcoreapp2.0\ToDoDataContext.pdb
+C:\Users\sulab\Documents\GitHub\PractiseTodoApp\PractiseToDoBAL\bin\Debug\netcoreapp2.0\ToDoEntities.pdb
+C:\Users\sulab\Documents\GitHub\PractiseTodoApp\PractiseToDoBAL\obj\Debug\netcoreapp2.0\PractiseToDoBAL.csprojResolveAssemblyReference.cache
+C:\Users\sulab\Documents\GitHub\PractiseTodoApp\PractiseToDoBAL\obj\Debug\netcoreapp2.0\PractiseToDoBAL.csproj.CoreCompileInputs.cache
+C:\Users\sulab\Documents\GitHub\PractiseTodoApp\PractiseToDoBAL\obj\Debug\netcoreapp2.0\PractiseToDoBAL.AssemblyInfoInputs.cache
+C:\Users\sulab\Documents\GitHub\PractiseTodoApp\PractiseToDoBAL\obj\Debug\netcoreapp2.0\PractiseToDoBAL.AssemblyInfo.cs
+C:\Users\sulab\Documents\GitHub\PractiseTodoApp\PractiseToDoBAL\obj\Debug\netcoreapp2.0\PractiseToDoBAL.dll
+C:\Users\sulab\Documents\GitHub\PractiseTodoApp\PractiseToDoBAL\obj\Debug\netcoreapp2.0\PractiseToDoBAL.pdb

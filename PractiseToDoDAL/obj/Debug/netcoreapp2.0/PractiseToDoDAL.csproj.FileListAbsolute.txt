@@ -1,0 +1,13 @@
+C:\Users\sulab\Documents\GitHub\PractiseTodoApp\PractiseToDoDAL\bin\Debug\netcoreapp2.0\PractiseToDoDAL.deps.json
+C:\Users\sulab\Documents\GitHub\PractiseTodoApp\PractiseToDoDAL\bin\Debug\netcoreapp2.0\PractiseToDoDAL.dll
+C:\Users\sulab\Documents\GitHub\PractiseTodoApp\PractiseToDoDAL\obj\Debug\netcoreapp2.0\PractiseToDoDAL.csprojResolveAssemblyReference.cache
+C:\Users\sulab\Documents\GitHub\PractiseTodoApp\PractiseToDoDAL\obj\Debug\netcoreapp2.0\PractiseToDoDAL.csproj.CoreCompileInputs.cache
+C:\Users\sulab\Documents\GitHub\PractiseTodoApp\PractiseToDoDAL\obj\Debug\netcoreapp2.0\PractiseToDoDAL.AssemblyInfoInputs.cache
+C:\Users\sulab\Documents\GitHub\PractiseTodoApp\PractiseToDoDAL\obj\Debug\netcoreapp2.0\PractiseToDoDAL.AssemblyInfo.cs
+C:\Users\sulab\Documents\GitHub\PractiseTodoApp\PractiseToDoDAL\bin\Debug\netcoreapp2.0\PractiseToDoDAL.pdb
+C:\Users\sulab\Documents\GitHub\PractiseTodoApp\PractiseToDoDAL\obj\Debug\netcoreapp2.0\PractiseToDoDAL.dll
+C:\Users\sulab\Documents\GitHub\PractiseTodoApp\PractiseToDoDAL\obj\Debug\netcoreapp2.0\PractiseToDoDAL.pdb
+C:\Users\sulab\Documents\GitHub\PractiseTodoApp\PractiseToDoDAL\bin\Debug\netcoreapp2.0\ToDoDataContext.dll
+C:\Users\sulab\Documents\GitHub\PractiseTodoApp\PractiseToDoDAL\bin\Debug\netcoreapp2.0\ToDoEntities.dll
+C:\Users\sulab\Documents\GitHub\PractiseTodoApp\PractiseToDoDAL\bin\Debug\netcoreapp2.0\ToDoDataContext.pdb
+C:\Users\sulab\Documents\GitHub\PractiseTodoApp\PractiseToDoDAL\bin\Debug\netcoreapp2.0\ToDoEntities.pdb

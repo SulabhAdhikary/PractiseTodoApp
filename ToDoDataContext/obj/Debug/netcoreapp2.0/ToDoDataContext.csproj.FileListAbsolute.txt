@@ -1,0 +1,13 @@
+C:\Users\sulab\Documents\GitHub\PractiseTodoApp\ToDoDataContext\bin\Debug\netcoreapp2.0\ToDoDataContext.deps.json
+C:\Users\sulab\Documents\GitHub\PractiseTodoApp\ToDoDataContext\bin\Debug\netcoreapp2.0\ToDoDataContext.dll
+C:\Users\sulab\Documents\GitHub\PractiseTodoApp\ToDoDataContext\bin\Debug\netcoreapp2.0\ToDoDataContext.pdb
+C:\Users\sulab\Documents\GitHub\PractiseTodoApp\ToDoDataContext\bin\Debug\netcoreapp2.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\sulab\Documents\GitHub\PractiseTodoApp\ToDoDataContext\bin\Debug\netcoreapp2.0\ToDoEntities.dll
+C:\Users\sulab\Documents\GitHub\PractiseTodoApp\ToDoDataContext\bin\Debug\netcoreapp2.0\ToDoEntities.pdb
+C:\Users\sulab\Documents\GitHub\PractiseTodoApp\ToDoDataContext\bin\Debug\netcoreapp2.0\Microsoft.EntityFrameworkCore.xml
+C:\Users\sulab\Documents\GitHub\PractiseTodoApp\ToDoDataContext\obj\Debug\netcoreapp2.0\ToDoDataContext.csprojResolveAssemblyReference.cache
+C:\Users\sulab\Documents\GitHub\PractiseTodoApp\ToDoDataContext\obj\Debug\netcoreapp2.0\ToDoDataContext.csproj.CoreCompileInputs.cache
+C:\Users\sulab\Documents\GitHub\PractiseTodoApp\ToDoDataContext\obj\Debug\netcoreapp2.0\ToDoDataContext.AssemblyInfoInputs.cache
+C:\Users\sulab\Documents\GitHub\PractiseTodoApp\ToDoDataContext\obj\Debug\netcoreapp2.0\ToDoDataContext.AssemblyInfo.cs
+C:\Users\sulab\Documents\GitHub\PractiseTodoApp\ToDoDataContext\obj\Debug\netcoreapp2.0\ToDoDataContext.dll
+C:\Users\sulab\Documents\GitHub\PractiseTodoApp\ToDoDataContext\obj\Debug\netcoreapp2.0\ToDoDataContext.pdb
