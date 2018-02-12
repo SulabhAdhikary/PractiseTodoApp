@@ -1,0 +1,12 @@
+.vertical-align {
+  display: flex;
+  align-items: center;
+}
+
+.control-label.required:after {
+  color: #d00;
+  content: "*";
+  position: absolute;
+  margin-left: 5px;
+  top: 7px;
+}

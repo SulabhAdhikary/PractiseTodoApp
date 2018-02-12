@@ -10,69 +10,65 @@ namespace practiseToDoApp.Controllers
     [Route("api/[controller]")]
     public class ToDoDataController : Controller
     {
-
-
         public IBalToDo ToDoBusinessLayer { get; set; }
-
-
-
 
         public ToDoDataController(IBalToDo businessLayer)
         {
             ToDoBusinessLayer = businessLayer;
         }
 
-        private static string[] Summaries = new[]
-        {
-            "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-        };
 
         [HttpGet("[action]")]
-        public async Task<IEnumerable<WeatherForecast>> WeatherForecasts()
+        public async Task<List<ToDoViewModel>> GetAllToDos()
+        { 
+            return await  ToDoBusinessLayer.GetAll();
+        }
+
+        [HttpGet("[action]")]
+        public async Task<ToDoViewModel> GetToByID(string id)
         {
-            var rng = new Random();
-            var test =await  ToDoBusinessLayer.GetAll();
-            return Enumerable.Range(1, 5).Select(index => new WeatherForecast
-            {
-                DateFormatted = DateTime.Now.AddDays(index).ToString("d"),
-                TemperatureC = rng.Next(-20, 55),
-                Summary = Summaries[rng.Next(Summaries.Length)]
-            });
+            var lstToDos= await ToDoBusinessLayer.GetAll();
+            return  lstToDos.Where(t => t.Id == id).Select(t=>t).FirstOrDefault<ToDoViewModel>();
         }
 
         [HttpPost("[action]")]
-        public IActionResult PostData([FromBody]ToDoViewModel toDoDomain)
+        public async Task<IActionResult> PostData([FromBody]ToDoViewModel toDoDomain)
         {
-
-            ToDoBusinessLayer.Add(new ToDoViewModel()
+            try
             {
-
-                Id = 5.ToString(),
-                Name = "Sulabh",
-                Description = "this is descript",
-                IsCompleted = false
-                
-            });
-
-            OkResult obj = new OkResult();
-            return obj;
-        }
-
-
-
-        public class WeatherForecast
-        {
-            public string DateFormatted { get; set; }
-            public int TemperatureC { get; set; }
-            public string Summary { get; set; }
-
-            public int TemperatureF
-            {
-                get
+                if (string.IsNullOrEmpty(toDoDomain.Id))
                 {
-                    return 32 + (int)(TemperatureC / 0.5556);
+                    toDoDomain.Id = await GetIDForNewData();
+                    await ToDoBusinessLayer.Add(toDoDomain);
                 }
+                else
+                {
+                    await ToDoBusinessLayer.Update(toDoDomain);
+                }
+                OkResult obj = new OkResult();
+                return obj;
+            }catch(Exception ex)
+            {
+                return BadRequest(ex.Message.ToString());
             }
         }
+
+
+
+        private async Task<string> GetIDForNewData()
+        {
+            var allExistingDate = await ToDoBusinessLayer.GetAll();
+            if (allExistingDate != null && allExistingDate.Count() > 0)
+            {
+                var allIDs = allExistingDate.Select(t => Convert.ToUInt32(t.Id));
+                if (allIDs != null && allIDs.Count() > 0)
+                {
+                    return Convert.ToString(allIDs.Max() + 1);
+                }
+            }
+            return "1";
+        }
+        
+  
     }
 }

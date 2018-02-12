@@ -1,0 +1,66 @@
+
+
+<form novalidate [formGroup]="addToDoForm" (ngSubmit)="onSubmit()">
+
+
+  <div class="row">
+    <div class="col-md-6">
+      <div class="form-group" [ngClass]="displayFieldCss('Name')">
+        <label for="Name" class="control-label required">Name</label>
+        <input type="text" class="form-control" formControlName="Name">
+        <app-field-error-display [displayError]="isFieldValid('Name')" errorMsg="Please provide To do  name">
+        </app-field-error-display>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="row">
+    <div class="col-md-6">
+      <div class="form-group">
+        <label>Description</label>
+        <textarea rows="5" cols="45"
+                  class="form-control" formControlName="Description" maxlength="200">
+        </textarea>
+      </div>
+    </div>
+  </div>
+
+  <div class="row vertical-align">
+    <div class="col-md-1 vertical-align">
+      <label>IsComplete</label>
+    </div>
+    <div class="col-md-1">
+      <input type="checkbox" class="form-control" formControlName="IsCompleted"  disabled="disabled">
+    </div>
+  </div>
+
+
+  <div class="row vertical-align">
+    <div class="col-md-12">
+      &nbsp;
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6">
+      <div class="form-group" [ngClass]="displayFieldCss('Priority')">
+        <label for="Priority" class="control-label required hola">Priority</label>
+        <select class="form-control" formControlName="Priority">
+          <option value="">Please select a Priority</option>
+          <option *ngFor="let item of toDoPriorities"
+                  [value]="item.key">
+            {{item.value}}
+          </option>
+        </select>
+        <app-field-error-display [displayError]="isFieldValid('Priority')" errorMsg="Please select a Priority">
+        </app-field-error-display>
+      </div>
+    </div>
+  </div>
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+
+<!--<pre>{{addToDoForm.value | json}}</pre>-->
